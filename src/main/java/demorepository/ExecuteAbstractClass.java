@@ -6,7 +6,7 @@ abstract class AbstractClass
 	int y=20;
 	abstract public void add();
 }
-class ImplementationClass extends AbstractClass
+class Concrete extends AbstractClass
 {
 
 	public void add()
@@ -20,7 +20,9 @@ public class ExecuteAbstractClass
 {
 	public static void main(String[] args)
 	{
-		AbstractClass ace=new ImplementationClass();
+		AbstractClass ace=new Concrete();
 		ace.add();
+		Concrete cnc=new Concrete();
+		cnc.add();
 	}
 }
